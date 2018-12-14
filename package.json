@@ -1,0 +1,33 @@
+{
+	"name": "latte_templates",
+	"version": "0.0.1",
+	"description": "latte_templates",
+	"keywords": [
+		"latte",
+		"latte_templates"
+	],
+	"author": "qiongtubao",
+	"main": "lib/index.js",
+	"bin": {
+		"template": "bin/template"
+	},
+	"scripts": {
+		"test:all": "latte mocha -r ts-node/register ./tests/object/*test.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qiongtubao/{{packageName}}.git"
+	},
+	"dependencies": {
+		"latte_lib": "git+https://github.com/qiongtubao/latte_lib.git#feature/ts"
+	},
+	"devDependencies": {
+		"chai": "*",
+		"mocha": "*",
+		"ts-node": "*",
+		"typescript": "*",
+		"should": "*",
+		"@types/mocha": "*",
+		"@types/node": "*"
+	}
+}

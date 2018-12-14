@@ -1,0 +1,24 @@
+{
+      "compilerOptions": {
+            "target": "esnext",
+            "noImplicitAny": false,
+            "module": "commonjs",
+            "removeComments": true,
+            "sourceMap": false,
+            "outDir": "lib",
+            "moduleResolution": "node",
+            "declaration": true,
+            "declarationDir": "tsd",
+            "lib":[
+                  "es2015.promise",
+                  "es2015"
+            ]
+      },
+      "include": [
+            "src"
+      ],
+      "exclude": [],
+      "files": [
+        "./src/tsd/global.d.ts"
+    ]
+}

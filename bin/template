@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+// console.log(process.argv)
+
+let templates = require('../lib/index')
+if(!templates[process.argv[2]]) {
+    return console.log('参数错误')
+}
+let args = Array.prototype.splice.call(process.argv, 3);
+templates[process.argv[2]](...args)
+

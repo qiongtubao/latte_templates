@@ -1,0 +1,30 @@
+{
+	"name": "{{packageName}}",
+	"version": "0.0.1",
+	"description": "{{packageName}}",
+	"keywords": [
+		"latte",
+		"{{packageName}}"
+	],
+	"author": "qiongtubao",
+	"main": "lib/index.js",
+	"scripts": {
+		"test:all": "latte mocha -r ts-node/register ./tests/*test.ts"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qiongtubao/{{packageName}}.git"
+	},
+	"dependencies": {
+		"latte_lib": "*"
+	},
+	"devDependencies": {
+		"chai": "*",
+		"mocha": "*",
+		"ts-node": "*",
+		"typescript": "*",
+		"should": "*",
+		"@types/mocha": "*",
+		"@types/node": "*"
+	}
+}
