@@ -47,11 +47,12 @@ export function add(templateName) {
     let path = find(templateName)
     if (path) {
         readSyncByRl(`模版${templateName}已存在是否删除 请输入y or n:`).then((res) => {
-            console.log(res);
             if (res == 'y' || res == 'Y') {
                 rm(path, function() {
                     addTemplate(templateName);
                 });
+            }else{
+                console.log(`添加${templateName}模版终止`)
             }
         });
     } else {
