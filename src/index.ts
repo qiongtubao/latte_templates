@@ -36,7 +36,9 @@ function readSyncByRl(tips) {
 }
 function addTemplate(templateName) {
     let path = resolve(__dirname, './../templates/', templateName)
-    copy('./', path, {}, function(err) {
+    copy('./', path, {
+        ignore:[/node_modules/ig]
+    }, function(err) {
         if(err) {
             return console.log(`添加模版${templateName}失败`)
         }
